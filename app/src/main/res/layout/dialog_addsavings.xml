@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="364dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="3dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/imageView6"
+            android:layout_weight="1"
+            android:text="Add Savings"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="25dp" />
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/btnSave"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="137dp"
+            tools:text="Amount" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="11dp"
+            android:layout_weight="1"
+            android:text="Enter Amount"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="138dp"
+            tools:layout_editor_absoluteY="108dp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/etAmount"
+            android:layout_marginTop="19dp"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="218dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="22dp"
+            app:srcCompat="@drawable/savings_icon"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

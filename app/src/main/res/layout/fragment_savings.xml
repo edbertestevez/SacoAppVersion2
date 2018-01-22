@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sacoappversion2.SavingsActivity$PlaceholderFragment">
+
+    <ListView
+        android:id="@+id/savingslist"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp"
+        android:layout_alignParentBottom="true" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Savings"
+                android:textSize="18sp"
+                android:layout_marginStart="17dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/tvTotalSavings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="21dp"
+                android:text="P1,500"
+                android:textSize="18sp"
+                android:layout_alignBaseline="@+id/tvPicker"
+                android:layout_alignBottom="@+id/tvPicker"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

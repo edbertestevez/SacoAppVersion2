@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sacoapp.EditBorrow">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/edtLender"
+            android:layout_below="@+id/txtCategory"
+            android:layout_marginTop="17dp"
+            android:text="Borrower Name"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/edtLender"
+            app:layout_constraintLeft_toLeftOf="@+id/edtLender"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1" />
+
+        <EditText
+            android:id="@+id/edtLender"
+            android:layout_width="350dp"
+            android:layout_height="58dp"
+            android:layout_below="@+id/textView10"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView18"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:id="@+id/txtCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:text="TextView"
+            android:textAlignment="viewStart"
+            android:textColor="@color/blue"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/edtLender"
+            android:layout_below="@+id/edtLender"
+            android:layout_marginTop="19dp"
+            android:text="Note"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/edtLender"
+            android:layout_alignStart="@+id/txtItem"
+            android:layout_below="@+id/txtItem"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/edtItem"
+            android:layout_below="@+id/edtItem"
+            android:layout_marginTop="23dp"
+            android:text="Quantity"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/edtLender"
+            android:layout_alignStart="@+id/textView18"
+            android:layout_below="@+id/textView18"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Name"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edtQty"
+            android:layout_marginTop="23dp"
+            android:background="@color/blue"
+            android:text="Edit Record"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/btnSave"
+            android:layout_below="@+id/btnSave"
+            android:background="@color/orange"
+            android:text="Already Returned"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

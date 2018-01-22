@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+            <item
+                android:id="@+id/nav_savings"
+                android:icon="@drawable/savings"
+                android:title="Savings" />
+            <item
+                android:id="@+id/nav_expenses"
+                android:icon="@drawable/expenses"
+                android:title="Expenses" />
+        <item
+                android:id="@+id/nav_borrow_return"
+                android:icon="@drawable/br"
+                android:title="Borrow and Return" />
+    </group>
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

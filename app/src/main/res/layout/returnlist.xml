@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.83">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="31dp"
+                android:layout_marginTop="11dp"
+                android:text="50"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="298dp"
+                tools:layout_editor_absoluteY="97dp" />
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNote"
+                android:layout_toEndOf="@+id/textView"
+                android:text="Edbert Jason Estevez"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="92dp"
+                tools:layout_editor_absoluteY="126dp" />
+
+            <TextView
+                android:id="@+id/tvNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvAmount"
+                android:layout_alignBottom="@+id/tvAmount"
+                android:layout_alignStart="@+id/textView"
+                android:text="Braces Ko"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="88dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvNote"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="20dp"
+                android:text="Category:  "
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="126dp" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCategory"
+                android:layout_toEndOf="@+id/textView"
+                android:paddingBottom="15dp"
+                android:text="Money"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView"
+                android:layout_below="@+id/textView"
+                android:paddingBottom="15dp"
+                android:text="Lender:  "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tvAmount"
+                android:layout_alignStart="@+id/tvAmount"
+                android:layout_below="@+id/tvAmount"
+                android:text="Qty"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

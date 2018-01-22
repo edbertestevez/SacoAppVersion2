@@ -1,0 +1,164 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.sacoappversion2.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/btnSavings"
+            android:layout_alignStart="@+id/tvBalance"
+            android:layout_marginBottom="43dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginStart="66dp"
+            android:background="@drawable/buttonorange_border"
+            android:text="+"
+            android:textColor="@color/orange"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnSavings"
+            app:layout_constraintRight_toLeftOf="@+id/btnSubtract"
+            app:layout_constraintTop_toTopOf="@+id/txtContact"
+            app:layout_constraintVertical_bias="0.777"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <Button
+            android:id="@+id/btnExpense"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_above="@+id/btnBR"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@color/blue"
+            android:drawableLeft="@drawable/expenses_home"
+            android:fontFamily="sans-serif"
+            android:text="Expenses"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/btnBR"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/btnBR"
+            app:layout_constraintRight_toRightOf="@+id/btnBR"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+        <Button
+            android:id="@+id/btnSavings"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_above="@+id/btnExpense"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@color/orange"
+            android:drawableLeft="@drawable/savings_home"
+            android:fontFamily="sans-serif"
+            android:text="Savings"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/btnExpense"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/btnAdd"
+            android:layout_marginRight="61dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/btnAdd"
+            android:background="@drawable/buttonblue_border"
+            android:text="-"
+            android:textColor="@color/blue"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="@+id/btnSavings"
+            tools:layout_constraintBaseline_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+        <Button
+            android:id="@+id/btnBR"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="21dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@color/gray"
+            android:drawableLeft="@drawable/br_home"
+            android:text="Borrow and Return"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_editor_absoluteY="393dp" />
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtContact"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:text="P150,000"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            app:layout_constraintLeft_toLeftOf="@+id/btnAdd"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:id="@+id/txtContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnAdd"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="23dp"
+            android:fontFamily="sans-serif"
+            android:text="Total Cash Balance"
+            android:textAlignment="center"
+            app:layout_constraintHorizontal_bias="0.546"
+            app:layout_constraintLeft_toRightOf="@+id/btnAdd"
+            app:layout_constraintRight_toRightOf="@+id/btnAdd"
+            app:layout_constraintTop_toBottomOf="@+id/tvBalance"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvBalance"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:text="Edbert Jason Estevez"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</FrameLayout>
